@@ -1,6 +1,8 @@
 import React from 'react'
+import {useNavigate} from "react-router-dom"
+import { useHistory } from 'react-router-dom/cjs/react-router-dom'
 export default function About(props) {
-
+    const navigate = useHistory()
     let myStyle = {
         color: props.mode === 'dark' ? 'white' : '#042743',
         backgroundColor: props.mode === 'dark' ? 'rgb(36 74 104)' : 'white',
@@ -26,7 +28,7 @@ export default function About(props) {
                     <textarea className="form-control " id="exampleFormControlTextarea1" rows="3" placeholder="Your message..." x></textarea>
                 </div>
                 <div class="d-grid gap-2 col-6 mx-auto my-4">
-                    <button class="btn btn-outline-info" type="button">Submit </button>
+                    <button class="btn btn-outline-info" type="button" onClick={()=>navigate.push("/")}>Submit </button>
 
                 </div>
             </form>
