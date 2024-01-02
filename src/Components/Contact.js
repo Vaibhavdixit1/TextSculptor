@@ -1,5 +1,4 @@
 import React from 'react'
-import {useNavigate} from "react-router-dom"
 import { useHistory } from 'react-router-dom/cjs/react-router-dom'
 export default function About(props) {
     const navigate = useHistory()
@@ -14,18 +13,18 @@ export default function About(props) {
             <form action="">
                 <div className="row g-3 my-5">
                     <div className="col">
-                        <input type="text" className="form-control" placeholder="First name" aria-label="First name" />
+                        <input type="text" className="form-control" placeholder="First name" name='First name' aria-label="First name" />
                     </div>
                     <div className="col">
-                        <input type="text" className="form-control" placeholder="Last name" aria-label="Last name" />
+                        <input type="text" className="form-control" placeholder="Last name" name='Last name' aria-label="Last name" />
                     </div>
                     <div className="form-group">
 
-                        <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />
+                        <input type="email" className="form-control" id="exampleFormControlInput1" name='Email' placeholder="name@example.com" />
                     </div>
                 </div>
                 <div className="form-group">
-                    <textarea className="form-control " id="exampleFormControlTextarea1" rows="3" placeholder="Your message..." x></textarea>
+                    <textarea className="form-control " id="exampleFormControlTextarea1" rows="3" name='Message' placeholder="Your message..." x></textarea>
                 </div>
                 <div class="d-grid gap-2 col-6 mx-auto my-4">
                     <button class="btn btn-outline-info" type="button" onClick={()=>navigate.push("/")}>Submit </button>
