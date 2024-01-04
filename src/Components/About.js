@@ -23,7 +23,7 @@ export default function About(props) {
                     </h2>
                     <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                         <div className="accordion-body" style={myStyle}>
-                            Textutils gives you a way to analyze your text quickly and efficiently. Be it word count, character count or
+                            TextSculptor gives you a way to analyze your text quickly and efficiently. Be it word count, character count or
 
                         </div>
                     </div>
@@ -36,7 +36,7 @@ export default function About(props) {
                     </h2>
                     <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                         <div className="accordion-body" style={myStyle}>
-                            Discover the efficiency of TextUtils, a versatile text analysis tool that goes beyond character and word count statistics. With TextUtils, you can swiftly convert your text to uppercase or lowercase, clear formatting, copy with ease, and effortlessly remove extra spaces. What sets us apart is the unique feature allowing you to listen to the words you've written. Whether you're navigating character limits or enhancing the clarity of your content, TextUtils provides a comprehensive solution for quick and effective text management.
+                            Discover the efficiency of TextSculptor, a versatile text analysis tool that goes beyond character and word count statistics. With TextSculptor, you can swiftly convert your text to uppercase or lowercase, clear formatting, copy with ease, and effortlessly remove extra spaces. What sets us apart is the unique feature allowing you to listen to the words you've written. Whether you're navigating character limits or enhancing the clarity of your content, TextSculptor provides a comprehensive solution for quick and effective text management.
                         </div>
                     </div>
                 </div>

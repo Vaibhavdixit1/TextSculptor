@@ -16,6 +16,7 @@ import {
 function App() {
   const [mode, setMode] = useState('light');
   const [alert, setAlert] = useState(null);
+  
 
   const showAlert = (message, type) => {
     setAlert({
@@ -42,7 +43,13 @@ function App() {
   return (
     <>
       <Router>
-        <Navbar title="TextUtils" mode={mode} toggleMode={toggleMode} key={new Date()} />
+      <Navbar
+          title="TextSculptor"
+          mode={mode}
+          toggleMode={toggleMode}
+          logo="/images/logo.png"  
+          key={new Date()}
+        />
         <Alert alert={alert} />
         <div className="container my-3">
           <Switch>
@@ -53,7 +60,7 @@ function App() {
               <Contact mode={mode} />
             </Route>
             <Route exact path="/">
-              <TextForm showAlert={showAlert} heading="Try TextUtils - word counter, character counter, remove extra spaces" mode={mode} />
+              <TextForm showAlert={showAlert} heading="Try TextSculptor - word counter, character counter, remove extra spaces" mode={mode} />
             </Route>
           </Switch>
         </div>
