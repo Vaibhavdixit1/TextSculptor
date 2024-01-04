@@ -6,6 +6,7 @@ import TextForm from './Components/TextForm';
 import Contact from './Components/Contact'; // Import the Contact component
 import React, { useState } from 'react';
 import Alert from './Components/Alert';
+import Footer from './Components/Footer';
 
 import {
   BrowserRouter as Router,
@@ -16,6 +17,7 @@ import {
 function App() {
   const [mode, setMode] = useState('light');
   const [alert, setAlert] = useState(null);
+  
   
 
   const showAlert = (message, type) => {
@@ -64,6 +66,7 @@ function App() {
             </Route>
           </Switch>
         </div>
+        <Footer /> 
       </Router>
     </>
   );
