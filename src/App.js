@@ -7,6 +7,7 @@ import Contact from './Components/Contact'; // Import the Contact component
 import React, { useState } from 'react';
 import Alert from './Components/Alert';
 import Footer from './Components/Footer';
+import SingleAbout from './Components/SingleAbout'; 
 
 import {
   BrowserRouter as Router,
@@ -53,11 +54,12 @@ function App() {
           key={new Date()}
         />
         <Alert alert={alert} />
-        <div className="container my-3">
+        <div className=" my-3">
           <Switch>
             <Route exact path="/about">
               <About mode={mode} />
             </Route>
+            <Route path="/SingleAbout.js" component={SingleAbout} />
             <Route exact path="/contact">
               <Contact mode={mode} />
             </Route>

@@ -1,5 +1,8 @@
 import React from 'react'
 
+import { Link } from 'react-router-dom';
+
+
 export default function About(props) {
 
     // const [myStyle, setMyStyle] = useState({
@@ -66,9 +69,9 @@ export default function About(props) {
                         Some quick example text to build on the card title and make up the bulk
                         of the card's content.
                     </p>
-                    <a href="#" className="btn btn-dark" style={{ transition: 'background-color 0.3s ease' }}>
+                    <Link to="/SingleAbout.js" className="btn btn-dark" style={{ transition: 'background-color 0.3s ease' }}>
                         Know More About Me
-                    </a>
+                    </Link>
                 </div>
             </div>
             {/* 2nd member */}
@@ -80,9 +83,9 @@ export default function About(props) {
                         Some quick example text to build on the card title and make up the bulk
                         of the card's content.
                     </p>
-                    <a href="#" className="btn btn-dark" style={{ transition: 'background-color 0.3s ease' }}>
+                    <Link to="/SingleAbout.js" className="btn btn-dark" style={{ transition: 'background-color 0.3s ease' }}>
                         Know More About Me
-                    </a>
+                    </Link>
                 </div>
             </div>
             {/* 3rd member  */}
@@ -94,9 +97,9 @@ export default function About(props) {
                         Some quick example text to build on the card title and make up the bulk
                         of the card's content.
                     </p>
-                    <a href="#" className="btn btn-dark" style={{ transition: 'background-color 0.3s ease' }}>
+                    <Link to="/SingleAbout.js" className="btn btn-dark" style={{ transition: 'background-color 0.3s ease' }}>
                         Know More About Me
-                    </a>
+                    </Link>
                 </div>
             </div>
             {/* 4th */}
@@ -108,9 +111,9 @@ export default function About(props) {
                         Some quick example text to build on the card title and make up the bulk
                         of the card's content.
                     </p>
-                    <a href="#" className="btn btn-dark" style={{ transition: 'background-color 0.3s ease' }}>
+                    <Link to="/SingleAbout.js" className="btn btn-dark" style={{ transition: 'background-color 0.3s ease' }}>
                         Know More About Me
-                    </a>
+                    </Link>
                 </div>
             </div>
             

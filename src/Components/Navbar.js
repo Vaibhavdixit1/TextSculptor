@@ -1,11 +1,12 @@
 // Navbar.js
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Navbar as BootstrapNavbar, Container, Nav, NavDropdown } from 'react-bootstrap';
 
 export default function Navbar({ title, mode, toggleMode, logo }) {
   return (
-    <nav className={`navbar navbar-expand-lg navbar-${mode} bg-${mode}`}>
-      <div className="container-fluid">
+    <BootstrapNavbar bg={mode} variant={mode} expand="lg">
+      <Container>
         <Link className="navbar-brand" to="/">
           {logo ? (
             <img src={logo} alt="Logo" height="70" className="d-inline-block align-top" />
@@ -13,30 +14,14 @@ export default function Navbar({ title, mode, toggleMode, logo }) {
             title
           )}
         </Link>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav mx-auto"> {/* Center-align the navigation links */}
-            <li className="nav-item">
-              <Link className="nav-link" to="/">Home</Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/about">About</Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/contact">Contact</Link>
-            </li>
-          </ul>
-          <div className="form-check form-switch" style={{ marginLeft: 'auto' }}>
+        <BootstrapNavbar.Toggle aria-controls="basic-navbar-nav" />
+        <BootstrapNavbar.Collapse id="basic-navbar-nav">
+          <Nav className="mx-auto">
+            <Nav.Link as={Link} to="/">Home</Nav.Link>
+            <Nav.Link as={Link} to="/about">About</Nav.Link>
+            <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
+          </Nav>
+          <div className="form-check form-switch">
             <input
               className="form-check-input"
               type="checkbox"
@@ -48,8 +33,8 @@ export default function Navbar({ title, mode, toggleMode, logo }) {
               {mode === 'light' ? 'Dark Mode' : 'Light Mode'}
             </label>
           </div>
-        </div>
-      </div>
-    </nav>
+        </BootstrapNavbar.Collapse>
+      </Container>
+    </BootstrapNavbar>
   );
 }
