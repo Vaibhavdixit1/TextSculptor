@@ -1,3 +1,18 @@
 .bg-body-tertiary{
     background-color:#e0aaff!important;
 }
+
+/* Additional Image styling for mobile view */
+@media (max-width: 767px) {
+    .col-md-8 {
+      order: 2; /* Change the order to 2 for mobile view, so it comes after the banner image */
+      margin-top: 10px !important;
+    }
+  
+    .col-md-4 {
+      order: 1; /* Change the order to 1 for mobile view, so it comes before the content */
+      padding-top: 0 !important; /* Adjust the padding for spacing */
+      /* padding-bottom: 10px !important;  */
+    }
+  }
+  
